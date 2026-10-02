@@ -75,6 +75,15 @@ dialog{border:0;border-radius:18px;background:var(--card);color:var(--ink);paddi
 dialog::backdrop{background:#0008}
 .note{background:var(--warn);color:#15171C;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:16px}
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+
+<script>
+  const qdfSupabase = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+  );
+</script>
 </head>
 <body>
 <header>
